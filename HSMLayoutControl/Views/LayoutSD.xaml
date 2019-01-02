@@ -1,0 +1,45 @@
+﻿<Window x:Class="HSMLayoutManager.Views.LayoutSD"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="HSM2Layout4_3" SizeToContent="WidthAndHeight" ResizeMode="NoResize" Closing="Window_Closing" VisualBitmapScalingMode="HighQuality">
+  <Window.Background>
+    <ImageBrush ImageSource="/HSMLayoutManager;component/Resources/SD4_3.png"/>
+  </Window.Background>
+  <Grid Width="1280" Height="720">
+    <Rectangle Fill="#FF0716AC" HorizontalAlignment="Left" Height="645" Margin="13,13,0,0" VerticalAlignment="Top" Width="861"/>
+    <Rectangle Fill="#FF0716AC" HorizontalAlignment="Left" Height="276" Margin="886,122,0,0" VerticalAlignment="Top" Width="381"/>
+    <Grid HorizontalAlignment="Left" Height="98" Margin="886,12,0,0" VerticalAlignment="Top" Width="382">
+      <Label Name="lblEstimate" Content="EST 99:99:99" Padding="0" HorizontalAlignment="Center"  VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Century Gothic" FontSize="18"  Foreground="#FFF0F0F0" Margin="10,66,10,0" Width="362" />
+      <Label Name="lblCategory" Content="No Category Set" Padding="0" HorizontalAlignment="Center"  VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="/HSMLayoutManager;component/Resources/Fonts/#Pixellari" FontSize="18"  Foreground="#FFF0F0F0" Margin="10,41,10,0" Width="362" />
+      <Label Name="lblGame" Content="No Game Set" Padding="0" HorizontalAlignment="Center"  VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="/HSMLayoutManager;component/Resources/Fonts/#Pixellari" FontSize="22"  Foreground="#FFF0F0F0" Margin="10,10,10,0" Width="362" />
+    </Grid>
+    <Grid HorizontalAlignment="Left" Height="66" Margin="886,432,0,0" VerticalAlignment="Top" Width="382">
+      <Label Name="lblTimer" Content="00:00:00" HorizontalAlignment="Center" Padding="0" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="/HSMLayoutManager;component/Resources/Fonts/#Romulus" FontSize="52"  Foreground="#FFF0F0F0" />
+    </Grid>
+    <Grid HorizontalAlignment="Left" Height="180" Margin="886,530,0,0" VerticalAlignment="Top" Width="382">
+      <Rectangle Fill="#996C0000" HorizontalAlignment="Left" Height="120" Margin="0,60,0,0" VerticalAlignment="Top" Width="382"/>
+      <Label Content="Partners" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70,10,0,0" FontFamily="Century Gothic" FontSize="24" FontWeight="Bold" Foreground="#FFF0F0F0" Height="34" />
+      <!--<Image HorizontalAlignment="Center" VerticalAlignment="Center" Margin="18,78,14,30" Source="/HSMLayoutManager;component/Resources/HS_Logo_Wide.png" Width="350" Height="72"/>-->
+    </Grid>
+    <Grid HorizontalAlignment="Left" Height="36" Margin="13,671,0,0" VerticalAlignment="Top" Width="861">
+
+      <Border HorizontalAlignment="Left" Height="30" VerticalAlignment="Center" Width="82" BorderBrush="#99F0F0F0" BorderThickness="0,0,2,0" Margin="0,3">
+        <Grid HorizontalAlignment="Left" Height="36" VerticalAlignment="Center" Width="82" Margin="0,-3,-2,-3">
+          <Label Name="lblCurrentTime" Padding="0" Content="00:00" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Century Gothic" FontSize="20" FontWeight="Bold" Foreground="#FFF0F0F0"/>
+        </Grid>
+      </Border>
+      <Grid HorizontalAlignment="Left" Height="30" Margin="100,3,0,0" VerticalAlignment="Top" Width="761">
+        <Label Name="lblNextGame" Content="No Game Set" Padding="0" HorizontalAlignment="Left"  VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Century Gothic" FontSize="16"  Foreground="#FFF0F0F0" Width="746" Margin="0,4" />
+      </Grid>
+    </Grid>
+    <Grid HorizontalAlignment="Left" Height="43" Margin="886,355,0,0" VerticalAlignment="Top" Width="381">
+      <StackPanel Orientation="Horizontal" Height="36" VerticalAlignment="Top" HorizontalAlignment="Center" Background="#FFEEEEEE" Margin="89,7,0,0" Width="292">
+        <Image HorizontalAlignment="Left" Height="18" VerticalAlignment="Center" Width="18" Source="/HSMLayoutManager;component/Resources/TwitchIcon.png" RenderOptions.BitmapScalingMode="Fant" Opacity=".8" Margin="10,0"/>
+        <Label Name="lblRunner" Content="No Runners Set" HorizontalAlignment="Center" Padding="2" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Century Gothic" FontSize="18"  Foreground="#FF131313" Margin="10,0"/>
+      </StackPanel>
+    </Grid>
+  </Grid>
+</Window>

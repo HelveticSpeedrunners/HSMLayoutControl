@@ -1,0 +1,86 @@
+﻿<Window x:Class="HSMLayoutManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="HSM Layout Manager" Height="550" MinHeight="450" Width="950" MinWidth="800" Closing="Window_Closing" Icon="Resources/HS_Logo_Min.png">
+  <Grid Margin="5">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="65*" />
+      <ColumnDefinition Width="35*" MaxWidth="300" />
+    </Grid.ColumnDefinitions>
+    <Grid Margin="0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="50" />
+      </Grid.RowDefinitions>
+      <ScrollViewer >
+        <StackPanel Name="stkEditors" Orientation="Vertical">
+        </StackPanel>
+      </ScrollViewer>
+      <StackPanel Grid.Row="1" Orientation="Horizontal">
+        <Button Name="btnAddRun" Content="Add Run" Margin="5" Click="BtnAddRun_Click" />
+        <Button Name="btnPrevRun" Content="Prev Run" Margin="5" Click="BtnPrevRun_Click" Background="#FF3695F4" BorderBrush="#FF768FFF" />
+        <Button Name="btnNextRun" Content="Next Run" Margin="5" Click="BtnNextRun_Click" Background="#FF3695F4" BorderBrush="#FF768FFF" />
+      </StackPanel>
+    </Grid>
+    <Grid Margin="0" Grid.Column="1">
+      <ScrollViewer>
+        <StackPanel Orientation="Vertical">
+          <GroupBox Name="gpxRunTimer" Header="Run Timer" HorizontalAlignment="Stretch"  Margin="5" VerticalAlignment="Top">
+            <Grid>
+              <Label Name="lblTimer" Content="00:00:00" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top"  />
+              <StackPanel Orientation="Horizontal" Margin="0,44,0,29" HorizontalAlignment="Center">
+                <Button Name="btnStartTimer" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Click="BtnStartTimer_Click" Margin="0,10,0,0">
+                  <StackPanel Orientation="Horizontal" >
+                    <materialDesign:PackIcon Kind="PlayArrow" Width="18" Height="18" />
+                  </StackPanel>
+                </Button>
+                <Button Name="btnPauseTimer" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Click="BtnPauseTimer_Click" Margin="10,10,0,0">
+                  <StackPanel Orientation="Horizontal" >
+                    <materialDesign:PackIcon Kind="Pause" Width="18" Height="18" />
+                  </StackPanel>
+                </Button>
+                <Button Name="btnStopTimer" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Click="BtnStopTimer_Click" Margin="10,10,0,0">
+                  <StackPanel Orientation="Horizontal" >
+                    <materialDesign:PackIcon Kind="Stop" Width="18" Height="18" />
+                  </StackPanel>
+                </Button>
+                <Button Name="btnResetTimer" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Click="BtnResetTimer_Click" Margin="10,10,0,0">
+                  <StackPanel Orientation="Horizontal" >
+                    <materialDesign:PackIcon Kind="Replay" Width="18" Height="18" />
+                  </StackPanel>
+                </Button>
+              </StackPanel>
+              <StackPanel Orientation="Horizontal" Margin="0,101,0,0" HorizontalAlignment="Center">
+                <TextBox Name="txtSetTime" Text="00:00:00" VerticalAlignment="Center" HorizontalContentAlignment="Center" Width="80" FontSize="18" />
+                <Button Name="btnSetTime" VerticalAlignment="Center" Margin="10,-2,0,-1" Click="BtnSetTime_Click">
+                  <StackPanel Orientation="Horizontal" >
+                    <materialDesign:PackIcon Kind="Refresh" Width="18" Height="18" />
+                  </StackPanel>
+                </Button>
+              </StackPanel>
+            </Grid>
+          </GroupBox>
+          <GroupBox Header="Layout Management" HorizontalAlignment="Stretch" Margin="5">
+            <StackPanel Orientation="Vertical">
+              <Button Name="btnUpdateIntermission" Content="Update Intermission" HorizontalAlignment="Stretch" Margin="5"  Click="BtnUpdateIntermission_Click" />
+              <Button Name="btnUpdateAll" Content="Update All" Margin="5" Click="BtnUpdateAll_Click" />
+              <Button Name="btnExport" Content="Export" Margin="5" Click="BtnExport_Click" />
+              <Button Name="btnImport" Content="Import" Margin="5" Click="BtnImport_Click" />
+            </StackPanel>
+          </GroupBox>
+          <GroupBox Header="Window Management" HorizontalAlignment="Stretch" Margin="5">
+            <StackPanel Orientation="Vertical">
+              <Button Name="btnShowLayoutHD" Content="Show 16:9 Layout" HorizontalAlignment="Stretch" Margin="5"  Click="BtnShowLayoutHD_Click" />
+              <Button Name="btnShowLayoutSD" Content="Show 4:3 Layout" Margin="5" Click="BtnShowLayoutSD_Click" />
+              <Button Name="btnShowLayoutIntermission" Content="Show Intermission Layout" Margin="5" Click="BtnShowLayoutIntermission_Click" />
+            </StackPanel>
+          </GroupBox>
+        </StackPanel>
+      </ScrollViewer>
+    </Grid>
+  </Grid>
+</Window>

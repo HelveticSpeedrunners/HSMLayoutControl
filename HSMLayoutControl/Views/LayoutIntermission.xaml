@@ -1,0 +1,132 @@
+﻿<Window x:Class="HSMLayoutManager.Views.LayoutIntermission"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="LayoutIntermission" SizeToContent="WidthAndHeight" ResizeMode="NoResize" Closing="Window_Closing" VisualBitmapScalingMode="HighQuality">
+  <Grid Width="1280" Height="720">
+    <Grid.Background>
+      <ImageBrush ImageSource="/HSMLayoutManager;component/Resources/SDIntermission.png"/>
+    </Grid.Background>
+    <Rectangle Fill="#FF0716AC" HorizontalAlignment="Left" Height="459" Margin="55,70,0,0" VerticalAlignment="Top" Width="611"/>
+    <Grid HorizontalAlignment="Left" Height="97" Margin="696,70,0,0" VerticalAlignment="Top" Width="510">
+      <Label Content="Helvetic Speedrunners Marathon #2" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" Margin="10,9,10,49" FontFamily="Century Gothic" FontSize="24" FontWeight="Bold" Foreground="#FFF0F0F0" Width="490" />
+      <Label Content="Intermission" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" Margin="189,48,179,10" FontFamily="Century Gothic" FontSize="24" FontWeight="Regular" Foreground="#FFF0F0F0" />
+    </Grid>
+    <Grid HorizontalAlignment="Left" Height="319" Margin="696,210,0,0" VerticalAlignment="Top" Width="513">
+      <Label Content="Schedule" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,10,0,0" FontFamily="Century Gothic" FontSize="24" FontWeight="Bold" Foreground="#FFF0F0F0" />
+      <Rectangle Fill="#996C0000" HorizontalAlignment="Left" Height="255" Margin="0,64,0,0" VerticalAlignment="Top" Width="514"/>
+      <Grid HorizontalAlignment="Left" Height="66" Margin="10,91,0,0" VerticalAlignment="Top" Width="490"  Opacity=".7" >
+        <Grid.Background>
+          <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.5">
+            <LinearGradientBrush.Transform>
+              <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform/>
+                <TranslateTransform X="4"/>
+              </TransformGroup>
+            </LinearGradientBrush.Transform>
+            <LinearGradientBrush.RelativeTransform>
+              <TransformGroup>
+                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                <RotateTransform CenterY="0.5" CenterX="0.5" Angle="270"/>
+                <TranslateTransform/>
+              </TransformGroup>
+            </LinearGradientBrush.RelativeTransform>
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#CCC50101" Offset="1"/>
+          </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="33*" />
+          <ColumnDefinition Width="67*" />
+        </Grid.ColumnDefinitions>
+        <Label Name="lblScheduleRun0" Grid.Column="0" Content="22:00" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right" FontFamily="Century Gothic" FontSize="28" FontWeight="Regular" Foreground="#FFF0F0F0" Padding="0,0,20,0" />
+        <Label Name="lblGameRun0" Grid.Column="1" Content="No Game Set" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Foreground="#FFF0F0F0" Margin="0,0,0,29" Height="37" />
+        <Label Name="lblCategoryRun0" Grid.Column="1" Content="No Category Set" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Century Gothic" FontSize="14" FontWeight="Regular" Foreground="#FFF0F0F0" Margin="0,37,0,2" />
+      </Grid>
+      <Grid HorizontalAlignment="Left" Height="66" Margin="10,157,0,0" VerticalAlignment="Top" Width="490" >
+        <!--Background="#CCFFFFFF"-->
+        <Grid.Background>
+          <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity=".9">
+            <LinearGradientBrush.Transform>
+              <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform/>
+                <TranslateTransform X="4"/>
+              </TransformGroup>
+            </LinearGradientBrush.Transform>
+            <LinearGradientBrush.RelativeTransform>
+              <TransformGroup>
+                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                <RotateTransform CenterY="0.5" CenterX="0.5" Angle="270"/>
+                <TranslateTransform/>
+              </TransformGroup>
+            </LinearGradientBrush.RelativeTransform>
+            <GradientStop Color="#FFB4B4B4"/>
+            <GradientStop Color="White" Offset="0.353"/>
+          </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="12*" />
+          <ColumnDefinition Width="21*" />
+          <ColumnDefinition Width="67*" />
+        </Grid.ColumnDefinitions>
+        <materialDesign:PackIcon Kind="PlayArrow" Width="35" Height="35" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Label Name="lblScheduleRun1" Grid.Column="1" Content="22:00" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right" FontFamily="Century Gothic" FontSize="28" FontWeight="Bold" Foreground="#FF292929" Padding="0,0,20,0" />
+        <Label Name="lblGameRun1" Grid.Column="2" Content="No Game Set" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Foreground="#FF292929" Margin="0,0,0,29" Height="37" />
+        <Label Name="lblCategoryRun1" Grid.Column="2" Content="No Category Set" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Century Gothic" FontSize="14" FontWeight="Regular" Foreground="#FF292929" Margin="0,37,0,2" />
+      </Grid>
+
+      <Grid HorizontalAlignment="Left" Height="66" Margin="10,223,0,0" VerticalAlignment="Top" Width="490" Opacity=".8">
+        <Grid.Background>
+          <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.5">
+            <LinearGradientBrush.Transform>
+              <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform/>
+                <TranslateTransform X="4"/>
+              </TransformGroup>
+            </LinearGradientBrush.Transform>
+            <LinearGradientBrush.RelativeTransform>
+              <TransformGroup>
+                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                <RotateTransform CenterY="0.5" CenterX="0.5" Angle="270"/>
+                <TranslateTransform/>
+              </TransformGroup>
+            </LinearGradientBrush.RelativeTransform>
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#CCC50101" Offset="1"/>
+          </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="33*" />
+          <ColumnDefinition Width="67*" />
+        </Grid.ColumnDefinitions>
+        <Label Name="lblScheduleRun2" Grid.Column="0" Content="22:00" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right" FontFamily="Century Gothic" FontSize="28" FontWeight="Regular" Foreground="#FFF0F0F0" Padding="0,0,20,0" />
+        <Label Name="lblGameRun2" Grid.Column="1" Content="No Game Set" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Foreground="#FFF0F0F0" Margin="0,0,0,29" Height="37" />
+        <Label Name="lblCategoryRun2" Grid.Column="1" Content="No Category Set" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Century Gothic" FontSize="14" FontWeight="Regular" Foreground="#FFF0F0F0" Margin="0,37,0,2" />
+      </Grid>
+    </Grid>
+    <Grid HorizontalAlignment="Left" Height="95" Margin="41,612,0,0" VerticalAlignment="Top" Width="1197" RenderTransformOrigin="-0.18,0">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="15*" />
+        <ColumnDefinition Width="85*" />
+      </Grid.ColumnDefinitions>
+      <Label Content="Local Time" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,2,0,0" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold" Foreground="#FFF0F0F0" />
+      <Label Name="lblCurrentTime" Content="19:21" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Century Gothic" FontSize="36" FontWeight="Bold" Foreground="#FFF0F0F0"/>
+      <!--<Image Grid.Column="1" Source="/HSMLayoutManager;component/Resources/HS_Logo_Wide.png" Margin="685,13,21,12" />-->
+    </Grid>
+
+
+
+  </Grid>
+</Window>
